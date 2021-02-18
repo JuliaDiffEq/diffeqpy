@@ -1,6 +1,9 @@
 import os
 import sys
 
+from jill.install import install_julia
+install_julia(confirm=True)
+
 from julia import Main
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
